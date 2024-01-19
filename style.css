@@ -1,0 +1,49 @@
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family:'Sora', sans-serif;
+}
+
+.container{
+    background-color: #FAFAF9;
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(152, 152, 152, 0.3);
+}
+
+.container img{
+    margin: 5%;
+    width: 90%;
+    height: 150px;
+    border-radius: 14px;
+}
+
+.container .information{
+    margin: 1%;
+    color: #6C727F;
+}
+.tittle{
+    margin: 3%;
+}
+.author{
+    margin: 5%;
+    text-align:start;
+    color:#6C727F;
+}
+
+.container .diseño{
+    margin:1em;
+    width: 50px;
+    padding: 1.2%;
+    text-align:justify;
+    font-size:smaller;
+    border-radius: 16px;
+    color: #883AE1;
+    background-color: #E6D6FC;
+}
+
+hr{
+    border-color: 0.5px #dbdbdb;
+    border-style:groove;
+}
