@@ -1,0 +1,22 @@
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgb(19,24,38); */
+}
+
+.section {
+    text-align: start;
+    justify-content: center;
+    margin: auto;
+    padding: 15px;
+    width: 65%;
+}
+
+
+.section .continue{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}

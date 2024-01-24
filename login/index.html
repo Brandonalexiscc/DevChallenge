@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'trout-500': '#4A5568',
+                    'trout-950': '#1A202C',
+                    'slate-400': '#718096',
+                    'white': '#FFFFFF',
+                    'white-900': '#8F8F8F',
+                    'white-800': '#1F2933',
+                    'gray-500': '#A0AEC0',
+                    'ebony-clay-500': '#292E3A',
+                    'santas-gray-500': '#A1A1A9',
+                    'purple-heart-500': '#652CD1'
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+    <title>Multi-step Register</title>
+</head>
+<body>
+    <div class="register ">
+        <div class="section rounded-xl bg-ebony-clay-500 color-white space-y-4 border-2 border-trout-500">
+            <h1 class="font-medium text-white">Register</h1>
+            <div class="name">
+                <label for="name" class="font-normal text-santas-gray-500 ">Name
+                <input type="text" class="rounded-lg border-2 border-trout-500 bg-ebony-clay-500 hover:border-white " id="name" name="name" placeholder="enter your name"> 
+            </label>
+            </div>
+            <div class="email">
+                <label for="email" class="text-santas-gray-500">Email
+                    <input type="email" id="email"  name="email" class="rounded-lg border-2 border-trout-500 bg-ebony-clay-500 hover:border-white" placeholder=" example@gmail.com">
+                </label>
+            </div>
+            <div class="continue place-content-center ">
+                <button class="rounded-lg bg-purple-heart-500 text-white">Continue</button>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
