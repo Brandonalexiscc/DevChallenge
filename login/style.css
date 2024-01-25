@@ -1,21 +1,50 @@
 .register{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: rgb(101,44,209);
+    background-image: linear-gradient(to bottom right, #652CD1,#121826, #121826,#121826, #121826 ,#652CD1);
     height: 100vh;
+    width: 100%;
 }
 
 .section {
-    text-align: start;
-    justify-content: center;
     margin: auto;
     padding: 15px;
-    width: 65%;
+    width: 30%;
+    height: auto;
+}
+.section .continue{
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
 }
 
+.userName{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 8px;
+    text-align: start;
+}
 
-.section .continue{
-    width:100%;
-    display: flex;
-    justify-content: center;
+.userEmail{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 8px;
+    text-align: start;
+}
+
+.submit{
+    text-align: center;
+}
+
+.continue{
+    padding-top: 5%;
+}
+
+.steps{
+    text-align: center;
+    color:white;
+    flex-direction:row;
+    text-align: start;
 }

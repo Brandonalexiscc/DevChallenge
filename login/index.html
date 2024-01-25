@@ -45,6 +45,7 @@
                     900: '#000000',
                     950: '#000000'
                     },
+
                 }
             }
         }
@@ -55,23 +56,24 @@
     <title>Multi-step Register</title>
 </head>
 <body>
-    <div class="register bg-gradient-to-r from-purple-heart-700 to-mirage-800  ">
-        <div class="section rounded-xl bg-ebony-clay-500 color-white space-y-4 border-2 border-trout-500">
-            <h1 class="font-medium text-white">Register</h1>
+    <div class="register flex ">
+        <div class="section rounded-xl bg-ebony-clay-500 color-white space-y-4 border-2 border-trout-500  px-10">
+            <h1 class="font-semibold text-2xl text-white py-6">Register</h1>
             <div class="name">
-                <label for="name" class="font-normal text-santas-gray-500 ">Name
-                <input type="text" class="rounded-lg border-2 border-trout-500 bg-ebony-clay-500 hover:border-white " id="name" name="name" placeholder="enter your name"> 
-            </label>
+                <label for="name" class="font-normal text-santas-gray-500">Name </label><br>
+                <input type="text" class="userName rounded-lg border-2 border-trout-500 bg-ebony-clay-500 hover:border-white " id="name" name="name" placeholder="enter your name" required> 
             </div>
             <div class="email">
-                <label for="email" class="text-santas-gray-500">Email
-                    <input type="email" id="email"  name="email" class="rounded-lg border-2 border-trout-500 bg-ebony-clay-500 hover:border-white" placeholder=" example@gmail.com">
-                </label>
+                <label for="email" class="text-santas-gray-500">Email </label><br>
+                    <input type="email" id="email"  name="email" class="userEmail rounded-lg border-2 border-trout-500 bg-ebony-clay-500 hover:border-white" placeholder=" example@gmail.com" required>
             </div>
-            <div class="continue place-content-center ">
-                <button class="rounded-lg bg-purple-heart-500 text-white">Continue</button>
+            <div class="continue place-content-center size-20 ">
+                <button type="button" id="submit" onclick="next()" class="submit rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</input>
             </div>
         </div>    
+        <div class="steps ">
+            <p>Step 1 of 3</p>
+        </div>
     </div>
 </body>
 </html>
