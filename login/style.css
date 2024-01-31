@@ -1,3 +1,7 @@
+.content{
+    background: rgb(101,44,209);
+    background-image: linear-gradient(to bottom right, #652CD1,#121826, #121826,#121826, #121826 ,#652CD1);
+}
 .register{
     background: rgb(101,44,209);
     background-image: linear-gradient(to bottom right, #652CD1,#121826, #121826,#121826, #121826 ,#652CD1);
@@ -43,8 +47,7 @@
 }
 
 .steps{
-    text-align: center;
-    color:white;
-    flex-direction:row;
-    text-align: start;
+    text-align:start;
+    margin-top: -13%;
+    margin-left: 40%;
 }
