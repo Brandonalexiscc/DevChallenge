@@ -1,10 +1,13 @@
 .content{
-    background: rgb(101,44,209);
+    margin: auto;
+}
+body{
     background-image: linear-gradient(to bottom right, #652CD1,#121826, #121826,#121826, #121826 ,#652CD1);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .register{
-    background: rgb(101,44,209);
-    background-image: linear-gradient(to bottom right, #652CD1,#121826, #121826,#121826, #121826 ,#652CD1);
+    margin: auto;
     height: 100vh;
     width: 100%;
 }

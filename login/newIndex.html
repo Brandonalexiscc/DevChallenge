@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'trout-500': '#4A5568',
+                    'trout-950': '#1A202C',
+                    'slate-400': '#718096',
+                    'white': '#FFFFFF',
+                    'white-900': '#8F8F8F',
+                    'white-800': '#1F2933',
+                    'gray-500': '#A0AEC0',
+                    'ebony-clay-500': '#292E3A',
+                    'santas-gray-500': '#A1A1A9',
+                    'purple-heart': {
+                    DEFAULT: '#652CD1',
+                    50: '#D3C2F2',
+                    100: '#C7B2EF',
+                    200: '#AE90E8',
+                    300: '#966EE0',
+                    400: '#7D4CD9',
+                    500: '#652CD1',
+                    600: '#4F22A3',
+                    700: '#381874',
+                    800: '#220F46',
+                    900: '#0B0518',
+                    950: '#000000'
+                    },
+                    'mirage': {
+                    DEFAULT: '#121826',
+                    50: '#4D67A3',
+                    100: '#465E95',
+                    200: '#394C79',
+                    300: '#2C3B5D',
+                    400: '#1F2942',
+                    500: '#121826',
+                    600: '#000000',
+                    700: '#000000',
+                    800: '#000000',
+                    900: '#000000',
+                    950: '#000000'
+                    },
+
+                    black: {
+                    100: "#d7d9dc",
+                    200: "#b0b3b9",
+                    300: "#888c95",
+                    400: "#616672",
+                    500: "#39404f",
+                    600: "#2e333f",
+                    700: "#22262f",
+                    800: "#171a20",
+                    900: "#0b0d10"
+                    },
+
+                    purple: {
+                    100: "#e6dffc",
+                    200: "#cebff8",
+                    300: "#b59ef5",
+                    400: "#9d7ef1",
+                    500: "#845eee",
+                    600: "#6a4bbe",
+                    700: "#4f388f",
+                    800: "#35265f",
+                    900: "#1a1330"
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="newIndex.css">
+    <title>Multi-step Register</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="grid place-items-center h-screen" id="fondo">
+        <div class="section rounded-xl bg-ebony-clay-500 color-white space-y-4 border-2 border-trout-500 px-20">
+            <h1 class="font-semibold text-2xl text-white py-6">Register</h1>
+            <div class="name">
+                <label for="name" class="font-normal text-santas-gray-500">Name </label><br>
+                <input type="text" class="userName rounded-lg border-2 border-trout-500 bg-ebony-clay-500 text-white hover:border-white " id="name" name="name" placeholder="enter your name" required> 
+            </div>
+            <div class="email">
+                <label for="email" class="text-santas-gray-500">Email </label><br>
+                    <input type="email" id="email"  name="email" class="userEmail rounded-lg text-white border-2 border-trout-500 bg-ebony-clay-500 hover:border-white" placeholder=" example@gmail.com" required>
+            </div>
+            <div class="continue place-content-center size-20 ">
+                <button onclick="mostrarAlerta()" type="button" id="submit" class="submit rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</input>
+            </div>
+        </div>
+        <div class="steps text-white">
+            <p>Step 1 of 3</p>
+        </div>
+    </div>
+</body>
+</html>
