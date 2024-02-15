@@ -1,4 +1,62 @@
+<<<<<<< HEAD
 .register{
     background: rgb(101,44,209);
     background-image: linear-gradient(to bottom right, #652CD1,#121826, #121826,#121826, #121826 ,#652CD1);
+=======
+.content{
+    margin: auto;
+}
+body{
+    background-image: linear-gradient(to bottom right, #652CD1,#121826, #121826,#121826, #121826 ,#652CD1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.register{
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+}
+
+.section {
+    margin: auto;
+    padding: 15px;
+    width: 30%;
+    height: auto;
+}
+.section .continue{
+    width:auto;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+}
+
+.userName{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 8px;
+    text-align: start;
+}
+
+.userEmail{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 8px;
+    text-align: start;
+}
+
+.submit{
+    text-align: center;
+}
+
+.continue{
+    padding-top: 5%;
+}
+
+.steps{
+    text-align:start;
+    margin-top: -13%;
+    margin-left: 40%;
+>>>>>>> 4944cd1a3041387f81c81804baaaddf3dd74aed1
 }
