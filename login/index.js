@@ -6,7 +6,7 @@ function mostrarAlerta(){
     if ( user == '' || email == ''){
         alert('Completa los campos vacios');
     } else if (!emailRegex.test(email)){
-        alert('Favor de ingresar un correo valido');
+        alert('Name o Email incorrecto');
     }else{
         alert(`Hola ${user} Bienvenido. ` + datos);
         let nuevaVista = document.getElementById('sumbit');
@@ -19,13 +19,22 @@ function mostrarAlerta(){
  * with the id 'selection1' into the array if it exists.
  */
 
-function enable(){
-    if(document.getElementById('selection1') != null){
-        let selection = [];
-        selection.push(document.getElementById('selection1'));
-        //cambiar el background de la seleccion a morado
-        document.getElementById('selection1').style.backgroundColor = 'purple';
+let selectores = [document.getElementById('selection1'), document.getElementById('selection2'), document.getElementById('selection3'),];
+
+function enable(event){
+    let element = event.target;
+    //evaluamos si el elemento tiene la clase opcion
+    // si la tiene cambiamos el color de fondo al ser seleccionado
+    // si ya ha sido se elimina el color de fondo
+    if(element.classList.contains('opcion')){
+        if(element.classList.contains('bg-purple-heart-500')){ // si el color de fondo es el morado
+            element.classList.remove('bg-purple-heart-500') // regresa a su color original si se vuelve a dar click
+            element.classList.add('bg-ebony-clay-500') // regresa a su color original si se vuelve a dar click
+        }else{
+            element.classList.remove('bg-white') // regresa a su color original si se vuelve a dar click
+            element.classList.add('bg-purple-heart-500') // regresa a su color original si se vuelve a dar click
+        }
+
     }
 }
 
-console.log(enable());

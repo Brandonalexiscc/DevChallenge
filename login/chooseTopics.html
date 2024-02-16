@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -84,11 +85,11 @@
         <div class="register grid place-items-center h-screen">
             <div class="section rounded-xl bg-ebony-clay-500 color-white space-y-4 border-2 border-trout-500  px-10">
                 <h1 class="font-semibold text-2xl text-white py-6">Which topics you are interested in?</h1>
-                <button class="opcion rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 active:bg-purple-heart-500 " onclick="enable()" id="selection1">Software Development</button><br>
-                <button class="opcion rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 active:bg-purple-heart-500" onclick="enable()" id="selection2">User Experience</button><br>
-                <button class="opcion rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 active:bg-purple-heart-500" onclick="enable()" id="selection3">Graphic Design</button>
+                <button class="opcion rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500 " onclick="enable(event)" id="selection1">Software Development</button><br>
+                <button class="opcion rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500" onclick="enable(event)" id="selection2">User Experience</button><br>
+                <button class="opcion rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500" onclick="enable(event)" id="selection3">Graphic Design</button>
                 <div class="continue  ml-[18%] size-20 pt-3 size-20 ">
-                    <button onclick="enable()" type="button" id="submit" class="submit active:bg-white rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</input>
+                    <button onclick="enable(event)" type="button" id="submit" class="submit active:bg-white rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</input>
                     </div>
                 </div>
                 <div class="paginado flex space-x-4 ">
