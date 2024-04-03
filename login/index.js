@@ -1,5 +1,15 @@
-var datos = [];
-
+//Parte para el localStorage
+let btn = document.querySelector('#submit');
+btn.addEventListener('click', () =>{
+let nombreUsuario = document.querySelector('#nameUser');
+document.querySelector('#name').innerHTML = nombreUsuario.value;
+window.localStorage.setItem('Usuario', nombreUsuario.value);
+nombreUsuario.value = '';
+let emailUsuario = document.querySelector('#email');
+document.querySelector('#name').innerHTML = emailUsuario.value;
+window.localStorage.setItem('email', emailUsuario.value);
+emailUsuario.value = '';
+});
 
 function mostrarAlerta(){
     let user = document.getElementById('name').value;
@@ -10,16 +20,12 @@ function mostrarAlerta(){
     } else if (!emailRegex.test(email)){
         alert('Name o Email incorrecto');
     }else{
-        datos.push(`Nombre:${user}`);
-        alert(`Hola ${user} Bienvenido. ` );
         let nuevaVista = document.getElementById('sumbit');
         window.location.href = 'chooseTopics.html';
         console.log(datos);
     }
 }
 
-
-mostrarAlerta();
 function enable(event){
     let element = event.target;
     //evaluamos si el elemento tiene la clase opcion
@@ -36,6 +42,14 @@ function enable(event){
             element.classList.add('bg-purple-heart-500') // regresa a su color original si se vuelve a dar click
             element.classList.add('text-white');
         }
+        localStorage.setItem('topics', element.value);
 
+        /*falta condicionar el que se guarden las opciones seleccionadas, ahorita solo guarda 1 opción*/ 
     }
+    // if(element.classList.contains('bg-purple-heart-500')){
+    //     let opcionesSeleccionadas = document.querySelector('.opcion');
+    //     document.querySelector('#opciones').innerHTML = opcionesSeleccionadas.value;
+    //     window.localStorage.setItem('Topics', opcionesSeleccionadas.values);
+    //     opcionesSeleccionadas.value = '';
+    // }
 }

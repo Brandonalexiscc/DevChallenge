@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -70,26 +69,41 @@
                     800: "#35265f",
                     900: "#1a1330"
                     },
+
+                    'port-gore': {
+                    DEFAULT: '#251D4E',
+                    50: '#6F5FC4',
+                    100: '#6250BE',
+                    200: '#4F3EA7',
+                    300: '#413389',
+                    400: '#33286C',
+                    500: '#251D4E',
+                    600: '#120E25',
+                    700: '#000000',
+                    800: '#000000',
+                    900: '#000000',
+                    950: '#000000'
+                    },
                 }
             }
         }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">  
     <title>Multi-step Register</title>
-    <script src="index.js"></script>
+
 </head>
 <body>
     <div class="content">
-        <div class="register grid place-items-center h-screen">
+        <div class="register grid place-items-center h-screen bg-gradient-to-br from-port-gore-500 via-mirage-500 to-port-gore-500">
             <div class="section rounded-xl bg-ebony-clay-500 color-white space-y-4 border-2 border-trout-500  px-10">
                 <h1 class="font-semibold text-2xl text-white py-6">Which topics you are interested in?</h1>
-                <button class="opcion text-left pl-4 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500 " onclick="enable(event)" id="selection1">Software Development</button><br>
-                <button class="opcion text-left pl-4 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500" onclick="enable(event)" id="selection2">User Experience</button><br>
-                <button class="opcion text-left pl-4 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500" onclick="enable(event)" id="selection3">Graphic Design</button>
+                
+                <input type="button" value="Software Development" class="opcion text-left pl-4 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500 " onclick="enable(event)" id="selection1"></input><br>
+                <input type="button" value="User Experience" class="opcion text-left pl-4 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500" onclick="enable(event)" id="selection2"></input><br>
+                <input type="button" value="Graphic Design" class="opcion text-left pl-4 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:text-white w-80 h-10 text-santas-gray-500 hover:bg-purple-heart-500" onclick="enable(event)" id="selection3"></input>
                 <div class="continue  ml-[18%] size-20 pt-3 size-20 ">
-                    <button onclick="lastPage()" type="button" id="lastPage" class="submit active:bg-white rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</input>
+                    <button onclick="enable(event)" type="button" id="lastPage" class="submit active:bg-white rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</button>
                     </div>
                 </div>
                 <div class="paginado flex space-x-4 ">
@@ -102,4 +116,5 @@
 
     
 </body>
+<script src="index.js"></script>
 </html>

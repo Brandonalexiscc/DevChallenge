@@ -69,6 +69,21 @@
                     800: "#35265f",
                     900: "#1a1330"
                     },
+
+                    'port-gore': {
+                    DEFAULT: '#251D4E',
+                    50: '#6F5FC4',
+                    100: '#6250BE',
+                    200: '#4F3EA7',
+                    300: '#413389',
+                    400: '#33286C',
+                    500: '#251D4E',
+                    600: '#120E25',
+                    700: '#000000',
+                    800: '#000000',
+                    900: '#000000',
+                    950: '#000000'
+                    },
                 }
             }
         }
@@ -77,22 +92,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">  
     <title>Multi-step Register</title>
-    <script src="index.js"></script>
+
 </head>
 <body>
-        <div class="register grid place-items-center h-screen">
+        <form class="register grid place-items-center h-screen bg-gradient-to-br from-port-gore-500 via-mirage-500 to-port-gore-500">
             <div class="section rounded-xl bg-ebony-clay-500 color-white space-y-4 pb-6 border-2 border-trout-500 pl-8 w-96 pt-5">
                 <h1 class="font-semibold text-2xl text-white py-6">Register</h1>
                 <div class="name">
-                    <label for="name" class="font-normal text-santas-gray-500 ">Name </label><br>
-                    <input type="text" class="userName text-white mt-2 pl-2 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:border-white w-80 h-10 placeholder:text-trout-500" id="name" name="name" placeholder="enter your name"> 
+                    <label for="name" id="name" class="font-normal text-santas-gray-500 ">Name </label><br>
+                    <input type="text" class="userName text-white mt-2 pl-2 rounded-lg border-2 w-64 border-trout-500 bg-ebony-clay-500 hover:border-white w-80 h-10 placeholder:text-trout-500" id="nameUser" name="name" placeholder="enter your name"> 
                 </div>
                 <div class="email">
-                    <label for="email" class="text-santas-gray-500">Email </label><br>
+                    <label for="email" id="name" class="text-santas-gray-500">Email </label><br>
                     <input type="email" id="email"  name="email" class="userEmail pl-2 mt-2 text-white rounded-lg border-2 border-trout-500 bg-ebony-clay-500 hover:border-white w-80 h-10 placeholder:text-trout-500" placeholder="example@gmail.com">
                 </div>
                 <div class="continue ml-[18%] size-20 pt-8">
-                    <button onclick="mostrarAlerta()" type="button" id="submit" class="submit rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</input>
+                    <button onclick="mostrarAlerta()" type="button" id="submit" class="submit rounded-3xl bg-gradient-to-b from-purple-heart-400 to-purple-heart-500 text-white h-10 w-48 ">Continue</button>
                 </div>
             </div>
             <div class="paginado flex justify-center space-x-4 w-full x-4 rounded-lg size-1 ">
@@ -100,6 +115,7 @@
                 <div class="step2 order-2 w-4 h-4 rounded-full bg-purple-heart-500 text-white-900 font-semibold"></div>
                 <div class="step3 order-3 w-4 h-4 rounded-full bg-purple-heart-500 text-white-900 font-semibold"></div>
             </div>
-        </div>
+        </form>
 </body>
+<script src="index.js"></script>
 </html>
