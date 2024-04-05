@@ -27,10 +27,12 @@ function mostrarAlerta(){
 }
 
 function enable(event){
+    let selectOption = [];
     let element = event.target;
     //evaluamos si el elemento tiene la clase opcion
     // si la tiene cambiamos el color de fondo al ser seleccionado
     // si ya ha sido se elimina el color de fondo
+
     if(element.classList.contains('opcion')){
         if(element.classList.contains('bg-purple-heart-500')){ // si el color de fondo es el morado
             element.classList.remove('bg-purple-heart-500') // elimina el color morado que tiene de fondo 
@@ -42,14 +44,12 @@ function enable(event){
             element.classList.add('bg-purple-heart-500') // regresa a su color original si se vuelve a dar click
             element.classList.add('text-white');
         }
-        localStorage.setItem('topics', element.value);
-
-        /*falta condicionar el que se guarden las opciones seleccionadas, ahorita solo guarda 1 opción*/ 
     }
-    // if(element.classList.contains('bg-purple-heart-500')){
-    //     let opcionesSeleccionadas = document.querySelector('.opcion');
-    //     document.querySelector('#opciones').innerHTML = opcionesSeleccionadas.value;
-    //     window.localStorage.setItem('Topics', opcionesSeleccionadas.values);
-    //     opcionesSeleccionadas.value = '';
-    // }
+    // Recopila todas las opciones seleccionadas
+    let opcionesSeleccionadas = document.querySelectorAll('.opcion.bg-purple-heart-500');
+    opcionesSeleccionadas.forEach(opcion => {
+        selectOption.push(opcion.value); // Agrega el valor de cada opción al arreglo selectOption
+    });
+    //Alemacenamos las opciones en localStorage
+    window.localStorage.setItem('Topics', JSON.stringify(selectOption));
 }
