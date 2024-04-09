@@ -1,0 +1,4 @@
+.content {
+    border-radius: 10px 0 0 10px; /* redondea solo la esquina superior izquierda */
+    background-color: purple; /* color de fondo específico para esa esquina */
+}

@@ -1,3 +1,5 @@
+let selectOption = [];
+
 //Parte para el localStorage
 let btn = document.querySelector('#submit');
 btn.addEventListener('click', () =>{
@@ -27,11 +29,14 @@ function mostrarAlerta(){
 }
 
 function enable(event){
-    let selectOption = [];
+    
     let element = event.target;
     //evaluamos si el elemento tiene la clase opcion
     // si la tiene cambiamos el color de fondo al ser seleccionado
     // si ya ha sido se elimina el color de fondo
+    if(selectOption === null && document.querySelector('#submitView')){
+        alert("You need select an option for continue.")
+    }
 
     if(element.classList.contains('opcion')){
         if(element.classList.contains('bg-purple-heart-500')){ // si el color de fondo es el morado
@@ -52,4 +57,14 @@ function enable(event){
     });
     //Alemacenamos las opciones en localStorage
     window.localStorage.setItem('Topics', JSON.stringify(selectOption));
+}
+console.log(selectOption);
+
+if(window.location.href === 'lastView.html'){
+    let nombre = window.localStorage.getItem('Usuario');
+    document.querySelector('#datosContainer').innerHTML = nombre;
+}
+
+function stepper(){
+    let
 }
